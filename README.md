@@ -75,7 +75,7 @@ SITEMAP='https://docs.anthropic.com/sitemap.xml'
 Purpose: This part defines key project variables such as PROJECT_ID, REGION, BUCKET, DIMENSIONS, and others. These variables will be used throughout the notebook to manage data storage, embedding dimensions, and model parameters.
 
 4. Load and Parse the Sitemap
-5. 
+
 import requests
 from bs4 import BeautifulSoup
 
