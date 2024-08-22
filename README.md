@@ -20,10 +20,13 @@ import IPython
 
 app = IPython.Application.instance()
 app.kernel.do_shutdown(True)
-Purpose: This section installs the necessary Python packages, including Google Cloud AI Platform, LangChain, and other dependencies such as BeautifulSoup for web scraping, and tqdm for progress bars. After installing the packages, the kernel is restarted to ensure that the newly installed packages are properly loaded.
+
+# Purpose: 
+
+This section installs the necessary Python packages, including Google Cloud AI Platform, LangChain, and other dependencies such as BeautifulSoup for web scraping, and tqdm for progress bars. After installing the packages, the kernel is restarted to ensure that the newly installed packages are properly loaded.
 
 2. Initial Setup
-3. 
+
 from IPython.display import display
 from IPython.display import Markdown
 import textwrap
@@ -33,6 +36,7 @@ def to_markdown(text):
   return Markdown(textwrap.indent(text, '> ', predicate=lambda _: True))
 
 # source API key from GCP project and configure genai client
+
 import os
 import pathlib
 import textwrap
